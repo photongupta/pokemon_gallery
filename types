@@ -1,0 +1,53 @@
+const getPokemonDetails = function(event) {
+        let typesOfPokemon = {
+          fire: 'rgb(236,180,151)',
+          dragon: 'rgb(95,119,189)',
+          fighting: 'rgb(251,183,209)',
+          water: 'rgb(95,119,189)',
+          bug: 'rgb(94,164,203)',
+          psychic: 'rgb(255,225,70)',
+          normal: 'rgb(253,221,185)',
+          poison: 'rgb(151,106,160)',
+          ground: 'rgb(238,137,57)',
+          electric: 'rgb(241,184,134)',
+          rock: 'rgb(185,183,190)',
+          fairy: 'rgb(246,202,214)',
+          'poison,grass': 'rgb(103,167,165)',
+          'poison,water': 'rgb(95,119,189)',
+          'flying,fire': 'rgb(236,180,151)',
+          'poison,ground': 'rgb(151,106,160)',
+          'normal,fairy': 'rgb(246,202,214)',
+          'poison,ghost': 'rgb(151,106,160)',
+          'flying,bug': 'rgb(94,164,203)',
+          'poison,bug': 'rgb(200,164,551)',
+          'bug,grass': 'rgb(253,150,82)',
+          'normal,flying': 'rgb(214,106,72)',
+          'water,ice': 'rgb(240,225,231)',
+          'ground,rock': 'rgb(185,183,190)',
+          'rock,water': 'rgb(95,119,189)',
+          'ice,psychic': 'rgb(95,119,189)',
+          'fairy,psychic': 'rgb(246,202,214)',
+          'flying,water': 'rgb(95,119,189)',
+          'flying,electric': 'rgb(241,184,134)',
+          'flying,poison': 'rgb(151,106,160)',
+          'flying,rock': 'rgb(185,183,190)',
+          'flying,ice': 'rgb(240,225,231)',
+          'flying,dragon': 'rgb(241,184,134)',
+          'flying,fire': 'rgb(236,180,151)',
+          'rock,water': 'rgb(185,183,190)',
+          'fighting,water': 'rgb(95,119,189)',
+          'water,psychic': 'rgb(95,119,189)',
+          'grass,psychic': 'rgb(95,119,189)',
+          'steel,electric': 'rgb(185,183,190)'
+        };
+        const a = event.target.getAttribute('id');
+        const type = event.target.getAttribute('type');
+        console.log(a, type);
+        document.getElementById(a).onmouseover = function() {
+          document.getElementById(a).style.backgroundColor =
+            typesOfPokemon[type];
+        };
+        document.getElementById(a).onmouseleave = function() {
+          document.getElementById(a).style.backgroundColor = 'white';
+        };
+      };

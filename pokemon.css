@@ -1,0 +1,168 @@
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+.headLine {
+  color: black;
+  font-family: sans-serif;
+  margin-top: 10px;
+  font-size: 50px;
+  border-bottom: 1px solid black;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.allPokemon {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  transition: 0.3s;
+  width: 260px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card:hover {
+  background-color: #eee;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 200px;
+}
+
+.searchBar {
+  height: 38px;
+  width: 450px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-right: 20px;
+  font-size: 14px;
+  border: 2px solid #606060;
+  border-right: 0px solid white;
+}
+
+.searchImage {
+  border: 2px solid #606060;
+  height: 34px;
+  background-color: #888888;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-left: 2px solid #888888;
+}
+
+.searchBlock {
+  margin-top: 26px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: right;
+}
+
+.detailPanel {
+  justify-self: start;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  margin: -600px;
+  background-color: gray;
+}
+
+.panel {
+  display: block;
+  margin: auto;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.panelName {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.panelImage {
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+.panelDescription {
+  color: black;
+  overflow: scroll;
+  padding: 10px;
+  margin: 50px;
+  text-align: justify;
+  font-family: sans-serif;
+  line-height: 20px;
+  font-weight: 100;
+  color: hsla(0, 5%, 12%, 0.815);
+}
+
+.panelButton {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin-left: 530px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
+.nameBlock {
+  position: relative;
+  display: flex;
+  letter-spacing: 0.5px;
+  font-family: sans-serif;
+  font-size: 16px;
+  background-image: linear-gradient(
+    rgba(40, 40, 40, 0.1),
+    rgba(220, 220, 220, 0.6)
+  );
+  color: black;
+}
+
+.typeImg {
+  width: 20px;
+  height: 20px;
+}
+.typeIcons {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+}
+
+.name {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(40, 40, 40, 0.7);
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.icon {
+  position: absolute;
+  padding: 10px 20px;
+  right: 0;
+}

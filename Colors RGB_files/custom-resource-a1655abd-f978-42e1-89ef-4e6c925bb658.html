@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<!-- saved from url=(0111)https://cdn.bannerflow.com/resources/custom-resource-a1655abd-f978-42e1-89ef-4e6c925bb658?cb=637096937279401039 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <title>Widget asset</title>  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style type="text/css"> html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; image-rendering: optimizeQuality;}/* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display: block;}body, html{background-color: transparent; overflow: hidden;}html{height: 100%; width: 100%;}body{line-height: 1; height: 100%; width: 100%;}ol, ul{list-style: none;}blockquote, q{quotes: none;}blockquote:before, blockquote:after, q:before, q:after{content: ''; content: none;}table{border-collapse: collapse; border-spacing: 0;}</style><script type="text/javascript">var console,BannerFlowAPIConnection,BannerFlow;void 0!==console&&void 0!==console.log||(console={log:function(){}}),console.warn=console.warn||console.log,console.error=console.error||console.log;try{document.domain.match(/(pro\.|sandbox\.|sandbox\-app\.|app\.|localhost)/)||(document.domain=document.domain.substring(document.domain.indexOf(".")+1))}catch(e){}function windowLoaded(e){e&&window.removeEventListener("load",windowLoaded),BannerFlow.sendMessage("loaded")}String.prototype.capitalize=function(){return this.charAt(0).toUpperCase()+this.slice(1)},BannerFlow=new(BannerFlowAPIConnection=function(i){var o=this;function a(){var e,t;null!=o.duration&&null!=o.startingPosition&&(o.imageGeneratorMode?o.dispatchEvent(o.START_ANIMATION):i.stopAnimation||(i.startTimestamp=Date.now(),1e3*(e=o.startingPosition-(i.seekOffset||0))>=i.playDelay&&!i.startAnimation?i.startAnimation=new r({duration:1e3*e-i.playDelay,callbackOnComplete:!0},function(){i.startAnimation=null,o.dispatchEvent(o.START_ANIMATION)}):e<=0&&!i.startAnimation&&o.dispatchEvent(o.START_ANIMATION),1e3*(e+o.duration)>=i.playDelay&&!i.stopAnimation&&(t=1e3*(e+o.duration)-i.playDelay-50,i.stopAnimation=new r({duration:t,callbackOnComplete:!0},function(){n()}))))}function n(){i.stopAnimation&&(i.stopAnimation.stop(),i.stopAnimation=null,o.dispatchEvent(o.STOP_ANIMATION))}function s(){i.startAnimation&&(clearTimeout(i.startAnimation),i.startAnimation=null),i.stopAnimation&&(i.stopAnimation.stop(),i.stopAnimation=null)}function r(e,t){var n,a,o,s;function i(){e.callbackOnComplete||t(),s=a(i),Date.now()-n>=e.duration&&(e.callbackOnComplete&&t(),r())}function r(){o(s)}function l(){n=Date.now(),i()}t||(t=e),a=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(e){return setTimeout(e,1e3/60)},o=window.cancelAnimationFrame||window.mozCancelAnimationFrame||function(e){window.clearTimeout(e)},e.waitForStart||l(),this.stop=r,this.start=l}(i=i||{})._listeners=[],i.prefix=["webkit","moz","MS","o",""],o.lastText="",o.TEXT_CHANGED=o.TEXT_UPDATED="text_changed",o.FEED_CHANGED=o.FEED_UPDATED="feed_changed",o.LOOP="loop",o.STYLE_CHANGED="style_changed",o.SETTINGS_CHANGED="settings_changed",o.RESIZE="resize",o.START_ANIMATION="start_animation",o.STOP_ANIMATION="stop_animation",o.TEXTS_RECEIVED="texts_received",o.MOUSE_MOVE="mousemove",o.MOUSE_ENTER="mouseenter",o.MOUSE_LEAVE="mouseleave",o.MOUSE_DOWN="mousedown",o.MOUSE_UP="mouseup",o.CLICK="click",o.INIT="init",o.PLAY="play",o.PAUSE="pause",o.STOP="stop",o.BEFORE_SEEK="before_seek",o.texts={},o.text="",o.parameters={},o.settings={},o.editorMode=!1,o.imageGeneratorMode=!1,o.imageGeneratorPosition=0,o.x=0,o.y=0,o.defaultTargetUrl="",o.initTime=Date.now(),o.bannerDuration=0,o.elementId=null,o.setText=function(e){o.text!==e&&(o.text=e||"","string"!=typeof o.text&&(o.text=""),o.lastText=o.text,o.dispatchEvent(o.TEXT_CHANGED,{text:o.text}))},o.setUrl=function(e){e&&(o.targetUrl=e)},o.loopChanged=function(e){i.loop=parseInt(e.loop)||0,i.seekOffset=e.seekOffset||0,n(),o.dispatchEvent(o.LOOP,{loop:i.loop}),i.playDelay=0,s(),a()},o.setStyle=function(e){e&&(o.style=e,o.duration=parseFloat(o.getStyle("duration")),o.startingPosition=parseFloat(o.getStyle("starting-position")),o.x=parseFloat(o.getStyle("left")||0),o.y=parseFloat(o.getStyle("top")||0),o.dispatchEvent(o.STYLE_CHANGED))},o.setSettings=function(e){e&&(o.settings=e,o.dispatchEvent(o.SETTINGS_CHANGED))},o.getText=function(){return o.text||""},o.getFeed=function(){return o.feed},o.getWidth=function(){try{return parseInt(o.style.parentStyle.width.replace("px",""))}catch(e){}return window.innerWidth},o.getHeight=function(){try{return parseInt(o.style.parentStyle.height.replace("px",""))}catch(e){}return window.innerHeight},o.getStyle=function(e,t){var n,a;if(e=e.replace(/-/g,"").toLowerCase(),o.style){for(a=0;a<i.prefix.length;a++)if((n=""!==i.prefix[a]?o.style[i.prefix[a]+e.capitalize()]:o.style[e])&&""!=n)return n;if(o.style.parentStyle)for(a=0;a<i.prefix.length;a++)if((n=""!==i.prefix[a]?o.style.parentStyle[i.prefix[a]+e.capitalize()]:o.style.parentStyle[e])&&""!=n)return n;if(o.style.attributes&&(n=o.style.attributes[e]||o.style.attributes["data"+e])&&""!=n)return n}return t||void 0},o.getTextByKey=function(e){return o.texts[e].value},o.setTextByKey=function(e,t){BannerFlow.sendMessage("setText",{key:e,text:t})},o.setTargetUrlByKey=function(e,t){BannerFlow.sendMessage("setTargetUrlByKey",{key:e,url:t})},o.setFeed=function(e){BannerFlow.sendMessage("setFeed",e)},o.setFeedInterval=function(e){BannerFlow.sendMessage("setFeedInterval",e)},o.pause=function(){BannerFlow.sendMessage("pause")},o.stop=function(){BannerFlow.sendMessage("stop")},o.play=function(){BannerFlow.sendMessage("play")},o.prevLoop=function(e){BannerFlow.sendMessage("prevLoop",e)},o.nextLoop=function(e){BannerFlow.sendMessage("nextLoop",e)},o.restartBanner=function(){BannerFlow.sendMessage("restartBanner")},o.restartLoop=function(){BannerFlow.sendMessage("restartLoop")},o.seek=function(e){BannerFlow.sendMessage("seek",e)},o.hideWidget=function(){BannerFlow.sendMessage("hideWidget",o.elementId)},o.showWidget=function(){BannerFlow.sendMessage("showWidget",o.elementId)},o.open=function(t,e,n){t=t||o.targetUrl||o.defaultTargetUrl;var a=void 0;if(e&&void 0!==e.clientX&&void 0!==e.clientY&&(a={clientX:(e.clientX||0)+(o.x||0),clientY:(e.clientY||0)+(o.y||0)}),t)try{window.parent.BF.bannerClick?window.parent.BF.bannerClick(a,t,n):window.parent.onBannerClick(a,t,n)}catch(e){console.warn("Could not track click due to XSS issues"),window.open(t,"_blank")}else console.warn("Target url not specified")},o.trackCustomEvent=function(e,t,n,a){o.sendMessage("custom_event",{name:e,id:t,label:n,value:a})},o.trackCustomProgressEvent=function(e,t,n,a){o.sendMessage("custom_progress_event",{name:e,id:t,label:n,value:a})},o.click=o.open,o.raiseEvent=function(e,t){o.sendMessage("event",{event:e,object:t})},o.addEventListener=function(e,t){i._listeners&&e&&t&&(void 0===i._listeners[e]&&(i._listeners[e]=[]),i._listeners[e].push(t))},o.removeEventListener=function(e,t){var n,a,o;if(i._listeners[e]instanceof Array)for(a=0,o=(n=i._listeners[e]).length;a<o;a++)if(n[a]===t){n.splice(a,1);break}},o.dispatchEvent=function(t,e){var n,a,o,s;if(!t)throw new Error("Event object missing type property.");try{n=new Event(t)}catch(e){(n=document.createEvent("Event")).initEvent(t,!0,!1)}if(n.data=e,i._listeners[n.type]instanceof Array)for(o=0,s=(a=i._listeners[n.type]).length;o<s;o++)a[o].call(i,n,e)},o.sendMessage=function(e,t){parent.postMessage({type:e,url:window.location.href,data:t},"*")},window.addEventListener("resize",function(e){o.dispatchEvent("resize")}),window.addEventListener("message",function(e){var t=null!=e.data.value?e.data.value:{},n=e.data.type;switch(n){case"set_text":e.data.key&&(o.key=e.data.key),e.data.feedIndex&&(o.feedIndex=e.data.feedIndex),o.setText(t),o.setUrl(e.data.url);break;case"set_feed":o.feed=JSON.parse(JSON.stringify(t)),o.dispatchEvent(o.FEED_CHANGED,{feed:o.feed});break;case"init":o.parameters=t.parameters?t.parameters:{},o.texts=t.texts,o.bannerDuration=parseFloat(t.duration/1e3),o.elementId=t.elementId,t.size&&(o.bannerWidth=t.size.width,o.bannerHeight=t.size.height),t.key&&(o.key=t.key),t.feedIndex&&(o.feedIndex=t.feedIndex),(t.defaultTargetUrl||t.target)&&(o.defaultTargetUrl=t.defaultTargetUrl||t.target),t.parameters&&(o.parameters=t.parameters),t.isFallback&&(o.imageGeneratorMode=!0),t.fallbackPosition&&(o.imageGeneratorPosition=parseFloat(t.fallbackPosition)),t.isEditor&&(o.editorMode=!0),t.languageCulture&&(o.languageCulture=t.languageCulture),t.cultureName&&(o.cultureName=t.cultureName),o.setStyle(t.style),o.setSettings(t.settings),o.setText(t.text),o.setUrl(t.targetUrl),t.feed&&(o.feed=JSON.parse(JSON.stringify(t.feed)),o.dispatchEvent(o.FEED_CHANGED,{feed:o.feed})),o.dispatchEvent(o.TEXTS_RECEIVED),o.dispatchEvent(o.INIT);break;case"is_loaded":windowLoaded();break;case"new_loop":o.loopChanged(t);break;case"set_style":o.setStyle(t);break;case"set_settings":o.setSettings(t);break;case"event":o.dispatchEvent(t.event,t.object);break;case o.MOUSE_MOVE:case o.MOUSE_DOWN:case o.MOUSE_UP:case o.MOUSE_ENTER:case o.MOUSE_LEAVE:case o.CLICK:BannerFlow.mouseX=t.x,BannerFlow.mouseY=t.y,o.dispatchEvent(n,t);break;case o.PLAY:a(),o.dispatchEvent(n,t);break;case o.PAUSE:i.startTimestamp&&(i.playDelay+=Date.now()-i.startTimestamp,i.startTimestamp=void 0),setTimeout(function(){s()}),o.dispatchEvent(n,t);break;case o.STOP:case o.BEFORE_SEEK:s(),o.dispatchEvent(n,t)}})})({}),window.addEventListener("load",windowLoaded);
+//# sourceMappingURL=widget.min.js.map
+</script><style>@font-face {
+    font-family: "Custom";
+    src:url("oringersans-semibold-fb2d489f-cef7-4035-bfd9-69e39e1942de.woff");
+    font-weight: 500;
+}
+html, body {
+    height: 100%;
+
+}
+body {
+    font-family: Custom;
+    font-weight: 500;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.dark-mode, body.invert-mode, body.all-white-mode {
+    color: #fff;
+}
+body.dark-mode .fil0, body.light-mode .fil0 {fill:#EF4538;fill-rule:nonzero}
+body.invert-mode .fil0 {fill:#000;fill-rule:nonzero}
+body.dark-mode .fil1 {fill:#FEFEFE;fill-rule:nonzero}
+body.invert-mode .fil1 {fill:#FEFEFE;fill-rule:nonzero}
+body.light-mode .fil1 {fill:#000000;fill-rule:nonzero}
+
+body.all-dark-mode .fil1 {fill:#000000;fill-rule:nonzero}
+body.all-white-mode .fil1 {fill:#fff;fill-rule:nonzero}
+body.all-white-mode .fil0 {fill:#fff;fill-rule:nonzero}
+
+body.light-mode, body.all-dark-mode {
+    color: #000;
+}
+
+
+#wrap {
+    /*font-size: 1em;*/
+    position:relative;
+    box-sizing: border-box;
+    width: 500px;
+    height: 200px;
+}
+
+.dark-mode #wrap {
+
+}
+
+#logo {
+    /*display: inline-flex;
+    align-self: center;*/
+    /*left: -.2em;*/
+    /*position: relative;*/
+
+    position: absolute;
+    right: 0px;
+    height: 100%;
+}
+
+.debug #logo {
+    border: 1px dotted blue;
+    box-sizing: border-box;
+}
+svg {
+    /*height: 0.72em;
+    width: 2.2254796089em;
+    top: .18em;*/
+    position: relative;
+}
+#texts {
+    text-align: right;
+    height: 100%;
+	left: 0px;
+    position: absolute;
+
+}
+
+.debug #texts {
+    border: 1px dotted red;
+    box-sizing: border-box;
+}
+
+
+
+#texts .text {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+#texts .text .word {
+    opacity: 0;
+    display: inline-block;
+}
+
+#text-width {
+    opacity: 0;
+    position: absolute;
+    
+}
+</style></head><body class="invert-mode"><div id="wrap" class="" style="font-size: 31.2396px; line-height: 200px;">
+<div id="texts" style="transform-style: preserve-3d; perspective: 2000px; width: 202.64px;"><div class="text text-modifier" style="opacity: 0; display: none;">rocking</div><div class="text text-modifier" style="opacity: 0; display: none;">around</div><div class="text text-modifier" style="opacity: 0; display: none;">xmas</div><div class="text text-modifier" style="opacity: 0; display: none;">tree</div><div class="text text-outro" style="opacity: 1; width: 100%; display: none;"><span class="word word0 same-word" style="opacity: 1;">it's&nbsp;</span><span class="word word1" style="opacity: 1; width: 0px;">not</span></div><div class="text text-exit" style="opacity: 1; width: 100%; right: 64px;"><span class="word word0 same-word" style="width: auto; opacity: 0;">it's&nbsp;</span><span class="word word1" style="width: 90px; opacity: 1;">shutter</span></div></div>
+<div id="logo" style="width: 68px; right: 65px; top: 0px;">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="0.944441in" height="0.305551in" version="1.1" style="shape-rendering: geometricprecision; text-rendering: geometricprecision; fill-rule: evenodd; clip-rule: evenodd; width: 68px; height: 22px;" viewBox="0 0 944 306" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+</defs>
+<g id="Layer_x0020_1">
+<metadata id="CorelCorpID_0Corel-Layer"></metadata>
+<path class="fil0" d="M111 167c-3,-1 -15,-2 -18,-3 -18,-3 -33,-7 -33,-25 0,-15 16,-23 36,-23 30,0 56,14 59,15l16 -43c-6,-3 -33,-18 -75,-18 -38,0 -86,20 -86,71 0,45 32,59 63,65 4,1 18,3 22,4 21,4 32,11 32,25 0,17 -16,25 -41,25 -39,0 -63,-12 -69,-14l-18 42c6,3 33,18 85,18 51,0 92,-25 92,-72 0,-44 -30,-60 -66,-67z"></path>
+<path class="fil0" d="M267 -9l-48 27 0 57 -25 0 0 46 25 0 0 100c0,43 17,81 79,81l19 0 0 -46 -7 0c-30,0 -43,-18 -43,-41l0 -93 55 0 0 -46 -55 0 0 -83z"></path>
+<path class="fil0" d="M644 117c19,0 38,9 44,29l44 -17c-12,-43 -53,-60 -88,-60 -64,0 -89,40 -89,78l0 80c0,38 26,78 89,78 36,0 76,-16 88,-60l-44 -17c-6,21 -25,29 -44,29 -33,0 -41,-18 -41,-38l0 -65c0,-20 9,-38 41,-38z"></path>
+<polygon class="fil0" points="850,176 940,74 881,74 803,163 803,-9 755,-9 755,301 803,301 803,229 819,211 888,301 946,301 "></polygon>
+<path class="fil1" d="M457 124l-50 0c-8,0 -14,6 -14,14l0 54 -49 0 0 -54c0,-35 29,-64 64,-64l50 0 0 49z"></path>
+<path class="fil1" d="M416 252l50 0c8,0 14,-6 14,-14l0 -54 49 0 0 54c0,35 -29,64 -64,64l-50 0 0 -49z"></path>
+</g>
+</svg>
+</div>
+</div>
+<div id="text-width" style="font-size: 31.2396px;">it's shutterstock</div>
+<script src="./TweenLite.min.js"></script>
+<script src="./CSSPlugin.min.js"></script><script>var firstRun = true;
+/* Refresh logo when widget is resized, text changed or settings changed */
+BannerFlow.addEventListener(BannerFlow.TEXT_CHANGED, refresh);
+BannerFlow.addEventListener(BannerFlow.SETTINGS_CHANGED, refresh);
+BannerFlow.addEventListener(BannerFlow.RESIZE, refresh);
+BannerFlow.addEventListener(BannerFlow.START_ANIMATION, refresh);
+
+function refresh(timelineTriggered) {
+    var isReady = BannerFlow.settings.theme && BannerFlow.text && BannerFlow.text.length > 0;
+
+    if (isReady && (BannerFlow.editorMode || timelineTriggered)) {
+        if (firstRun) {
+            // Init some general, static TweenLite settings
+            init();
+        } else {
+            // Kill all (possibly) ongoing tweens
+            killAllTweens();
+        }
+        
+        var settings = getSettings(); // Parse settings
+        var phrases = getPhrases();   // Parse phrases from translation
+        var logotype = new Logotype(phrases, settings); // Creates and starts playing logotype animation
+    }
+}
+
+function getPhrases() {
+    var lines = BannerFlow.text.split('</div><div>');
+    var phrases = [];
+
+    for (var i = 0; i < lines.length; i++) {
+        var line = lines[i];
+        line = line.replace('<div>', '').replace('</div>', '').trim();
+        if (line.length > 0) {
+            phrases.push(line);
+        }
+    }
+    return phrases;
+}
+
+function getSettings() {
+    return {
+        theme: BannerFlow.settings.theme,
+        debug: false,
+        slideXOffset: BannerFlow.settings.slideXOffset,
+        logoYOffset: BannerFlow.settings.logoYOffset,
+        modifierFallAnimation: BannerFlow.settings.modifiersAnimation != 'Fade out',
+        modifiersDuration: BannerFlow.settings.modifiersDuration
+    };
+}    
+
+function killAllTweens() {
+    var list = [];
+    list.push(document.querySelector('#texts'));
+    list.push(document.querySelector('#logo'));
+    var textEls = document.querySelectorAll('.text');
+
+    for (var i = 0; i < textEls.length; i++) {
+        list.push(textEls[i]);
+    }
+    var wordEls = document.querySelectorAll('.word');
+    for (var i = 0; i < wordEls.length; i++) {
+        list.push(wordEls[i]);
+    }
+
+    for (var i = 0; i < list.length; i++) {
+        TweenLite.killTweensOf(list[i]);
+    }
+}
+
+function init() {
+    TweenLite.defaultEase = Power2.easeOut;
+    TweenLite.set("#texts", {perspective:2000, transformStyle:"preserve-3d"});
+    firstRun = false;
+}
+
+
+var Logotype = function(phrases, settings) {
+
+    var logoH = 0.3235257682; // Static width/height aspect ratio of "stock" logo
+    var logo = document.querySelector('#logo');
+    var logoSvg = document.querySelector('#logo svg');
+    var texts = document.querySelector('#texts');
+    var wrap = document.querySelector('#wrap');
+    var logoHeight;
+    var wOffset = 0;
+    var w;
+    var h;
+
+    function init(phrases, settings) {
+        // Color theme
+        document.body.className = settings.theme.toLowerCase() + '-mode';
+        wrap.className = settings.debug ? 'debug' : '';
+		 
+        // Set base layout
+        w = wrap.clientWidth;
+        h = wrap.clientHeight;
+        
+        var widgetH = document.body.clientHeight;
+        
+        // Calculate text length
+        var divTextWidth = document.querySelector('#text-width');
+        divTextWidth.style.fontSize = (w / 4) * logoH * 1.42 + 'px'; // Intended font size
+        var refTextWidth = 0;
+        for (var i=0; i<phrases.length; i++) {
+            divTextWidth.innerHTML = phrases[i] + 'stock';
+            var txtW = divTextWidth.clientWidth;
+            if (txtW > refTextWidth)
+                refTextWidth = txtW;
+        	
+        }
+        
+        // Modifier texts will become wider than widget's width
+        if (refTextWidth > w) {
+            wOffset = w - (w * w/refTextWidth);
+            w = w - wOffset;
+        }
+        
+        // Logo height will become larger than widget's height
+        var logoTooLargeFactor = 1;
+        console.log('logo height', (w/4)*logoH, 'widget height', widgetH);
+        if ((w/4)*logoH > widgetH * logoTooLargeFactor) {
+            console.log('Too large logo height');
+            var wOffset2 = w - ((4 * widgetH * logoTooLargeFactor)/logoH);
+            wOffset += wOffset2;
+            w -= wOffset2;
+        }
+		
+        // Using width as responsive attribute. Logo to use 1/4 of width on the right. Texts to use remaining width (3/4) on the left.
+        logoHeight = (w / 4) * logoH;
+        logo.style.width = w / 4 + 'px';
+        logo.style.right = w * 0.003 + 'px';
+        logo.style.top = settings.logoYOffset + 'px';
+        texts.style.width = wOffset + (w / 4) * 3 - (w / 4) * 0.02 + 'px'; // - (w / 4) * 0.02 is creating a slight extra room between texts and logo 
+        
+        logoSvg.style.width = logo.style.width;
+        logoSvg.style.height = Math.ceil(logoHeight) + 'px';
+
+        wrap.style.fontSize = logoHeight * 1.42 + 'px';
+        wrap.style.lineHeight = h + 'px';
+
+        // Prepare all text elements in texts container (DOM and positioning)
+        var aniTexts =  createTexts(phrases, settings);
+
+        // Start animations (except for fallback image creation)
+        if (!BannerFlow.imageGeneratorMode) {
+            startAnimation(aniTexts, settings);
+        }
+    }
+
+    function startAnimation(aniTexts, settings) {
+        var duration = settings.modifiersDuration;	// How long each modifier word show be displayed
+        var inTransitionTime = 0.3;					// How fast each modifier word should animate in
+        var outTransitionTime = 0.2;				// How fast each modifier word should animate out
+        var cursor = 0;								// Keeps track of the chains of tweenings' current position
+
+        for (var i=0; i<aniTexts.length; i++) {
+            var aniText = aniTexts[i];
+            var el = aniText.el;
+            
+            // Each text has a type that determines how it should animate (modifier, outro and exit)
+            switch(aniText.type) {
+                case 'modifier':
+                    // In (fade in each modifier text, except first which is already showing)
+                    if (i > 0) {
+                        TweenLite.to(el, inTransitionTime, { opacity: 1, delay: cursor });
+                    }
+
+                    // Out ("Fall down" or "Fade out" animation to each modifier text)
+                    if (settings.modifierFallAnimation) {
+                    	var tiltOrigin = ((logoHeight/wrap.clientHeight) + (1- logoHeight/wrap.clientHeight)/2) * 100;
+                    	TweenLite.to(el, outTransitionTime, { opacity: 0, rotationX:-90, transformOrigin:"70% " + tiltOrigin + '%', delay: cursor + (i > 0 ? inTransitionTime : 0) + duration , onComplete: function() { this.style.display = 'none';}, onCompleteScope: el });
+					} else {
+                        TweenLite.to(el, outTransitionTime, { opacity: 0, delay: cursor + (i > 0 ? inTransitionTime : 0) + duration , onComplete: function() { this.style.display = 'none';}, onCompleteScope: el });
+                    }
+                    
+                    // Keep track of the time offset, to ease delay calculation for next text
+                    cursor += (i > 0 ? inTransitionTime : 0) + duration + outTransitionTime / 2 + 0.4;
+
+                    break;
+                case 'outro':
+
+                    // In (fade in each word in the outro text)
+                    //el.style.opacity = 1; // Make text visible. Each word is still hidden.
+                    var words = el.querySelectorAll('.word');
+					
+                    // Slide in animation of entire text
+                    el.style.opacity = 0.8; // Slight opacity animation
+                    el.style.width = '0px';
+                    TweenLite.to(el, 0.6, { opacity: 1, width: '100%', delay: cursor}); // "it's not" sliding in
+                    for (var n = 0; n < words.length; n++) {
+                        var word = words[n];
+                        word.style.opacity = 1;
+                        
+                        var regularWord = !word.classList.contains('same-word');
+                        if (regularWord) {
+                            // Make "not" slide out
+                            TweenLite.to(word, 0.3, { width: '0px', delay: 0.9 + cursor}); 
+                        }
+                        
+                    }
+                    cursor += 1.2;
+
+                    break;
+                case 'exit':
+                    
+                    // IN: Animate exit text "it's shutter" with a sliding effect (coming out from the "stock" logo)
+					TweenLite.to(el, 0, {
+                        onComplete: function() {
+                            this.style.opacity = 1;
+                    		this.style.width = '100%';
+                            document.querySelector('.text-outro').style.display = 'none';
+                        },
+                        onCompleteScope: el,
+                        delay: cursor
+                    });
+                    // Animates width back to 100%, since positioned to right, creates a slide effect to the left
+                    //TweenLite.to(el, inTransitionTime, { opacity: 1, width: '100%', delay: cursor });
+
+                    var words = el.querySelectorAll('.word');
+                    for (var n = 0; n < words.length; n++) {
+                        var word = words[n];
+                        
+                        var regularWord = !word.classList.contains('same-word');
+                        if (regularWord) {
+                            // In animation of regular exit words
+                            var origWidth = word.getBoundingClientRect().width;
+                            word.style.width = 0;
+                            word.style.opacity = 1;
+                            TweenLite.to(word, 0.3, {  width: origWidth + 'px', delay: 0.0 + cursor});
+                        } else {
+                            // In state of "same" words shared with outro (e.g. it's)
+                            word.style.width = 'auto';
+                            word.style.opacity = 1;
+             
+                        }
+                        
+                        if (n != words.length - 1) {
+                            // Out animation of all words except last word (shutter)
+                            // Out animation of "same" words shared with outro (e.g. it's), excluding last word "shutter"
+                            TweenLite.to(word, 0.15, { opacity: 0, delay: n * 0.1 + cursor + 1.3});
+                        }
+                        
+                        
+                    }
+
+                    // Slide exit text "shutter" and "stock" logo to the left/center
+                    var slideDelay = cursor + 1.3;
+                    var slideOffset = settings.slideXOffset;
+                    if (slideOffset != 0) {
+                        TweenLite.to(logo, 0.6, { right: slideOffset, delay: slideDelay });
+                        TweenLite.to(el, 0.6, { right: slideOffset - (w / 4) * 0.02, delay: slideDelay }); // (w / 4) * 0.02 is to move "shutter" back a bit closer to logo to make it more similar to real "shutterstock" logo.
+					}
+                    break;
+            } 
+
+        }
+    }
+
+    function createTexts(phrases, settings) {
+        var list = [];
+        // Empty text container
+        texts.innerHTML = '';
+		var sameInitialWordsCount = 0; // Detect possible "it's" and non-english equivalent of the same matching between outro and exit
+        
+        // Insert each text
+        for (var i=0; i<phrases.length; i++) {
+            var type;
+            if (i == phrases.length - 1) {
+                type = 'exit';
+            } else if (i == phrases.length - 2) {
+                type = 'outro';
+            } else {
+                type = 'modifier';
+            }
+
+            var text = document.createElement('div');
+            text.className = 'text text-' + type;
+
+            var content =  phrases[i];
+            if (type != 'modifier') {
+                
+                var words = content.split(' ');
+                if (type == 'outro') {
+                    var exitWords = phrases[i+1].split(' ');
+                    if (exitWords.length > 1 && words.length > 1) {
+                        for (var j = 0; j < words.length - 1; j++) {
+                            if (words[j] == exitWords[j]) {
+                                sameInitialWordsCount++;
+                            } else {
+                                break;
+                            }
+                        }
+                    }
+                    
+                }
+                
+                content = '';
+                for (var n = 0; n < words.length; n++) {
+                    var sameWordClass = '';
+                    if (sameInitialWordsCount > 0 && n < sameInitialWordsCount)
+                        sameWordClass = ' same-word';
+                    words[n] = '<span class="word word'+n+'' + sameWordClass + '">' + words[n] + (n != words.length - 1 ? '&nbsp;' : '') + '</span>';
+                    content = words.join('');
+                }
+            }
+
+            text.innerHTML = content;
+
+            // Hide all texts except first
+            text.style.opacity = i == 0 ? 1 : 0;
+
+            texts.appendChild(text);
+
+            list.push({
+                phrase: phrases[i],
+                el: text,
+                type: type
+            });
+        }
+        return list;
+    }
+
+    init(phrases, settings);
+};</script></body></html>

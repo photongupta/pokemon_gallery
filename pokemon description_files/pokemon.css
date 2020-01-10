@@ -1,0 +1,87 @@
+.headLine {
+  color: black;
+  font-family: sans-serif;
+  margin-top: 10px;
+  font-size: 50px;
+  border-bottom: 1px solid black;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.allPokemon {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  transition: 0.3s;
+  width: 260px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.card:hover {
+  background-color: #eee;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.name {
+  display: block;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-weight: 400;
+  font-size: 24px;
+  background-image: linear-gradient(#fff, #bbb);
+  text-align: center;
+  color: black;
+}
+.description {
+  color: black;
+  height: 100px;
+  overflow: scroll;
+  padding: 10px;
+  margin-top: -10px;
+  text-align: justify;
+}
+.image {
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 200px;
+}
+
+.searchBar {
+  height: 38px;
+  width: 450px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-right: 20px;
+  font-size: 14px;
+  border: 2px solid #606060;
+  border-right: 0px solid white;
+}
+
+.searchImage {
+  border: 2px solid #606060;
+  height: 34px;
+  background-color: #888888;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-left: 2px solid #888888;
+}
+
+.searchBlock {
+  margin-top: 26px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: right;
+}
